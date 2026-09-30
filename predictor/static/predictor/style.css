@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Main container */
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Headings */
+
+h1 {
+    text-align: center;
+    color: #1f3c88;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #1f3c88;
+}
+
+h3 {
+    color: #333;
+    margin-top: 30px;
+}
+
+
+/* Introduction text */
+
+.introduction {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+
+/* Form */
+
+form p {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+
+/* Inputs */
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #1f3c88;
+    box-shadow: 0 0 0 2px rgba(31, 60, 136, 0.1);
+}
+
+
+/* Prediction button */
+
+button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 10px;
+    background-color: #1f3c88;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #162d68;
+}
+
+button:disabled {
+    background-color: #888;
+    cursor: not-allowed;
+}
+
+
+/* Prediction result */
+
+.result {
+    text-align: center;
+    padding: 25px;
+    background-color: #f4f6f8;
+    border-radius: 10px;
+    margin: 25px 0;
+}
+
+.prediction {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1f3c88;
+}
+
+.confidence {
+    font-size: 18px;
+    color: #555;
+}
+
+
+/* Student information */
+
+.student-information {
+    margin-top: 25px;
+}
+
+.student-information p {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+}
+
+
+/* Links */
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #1f3c88;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Horizontal line */
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 30px 0;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 85%;
+        padding: 25px;
+        margin: 25px auto;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+}

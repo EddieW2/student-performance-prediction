@@ -1,20 +1,73 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Prediction Result</title>
+    <link rel="stylesheet" href="{% static 'predictor/style.css' %}">
 </head>
 
 <body>
 
-    <h1>Prediction Result</h1>
+    <h1>Student Performance Prediction</h1>
 
-    <p>The student's information has been successfully submitted.</p>
+    <h2>{{ student.name }}</h2>
+
+    <h3>Prediction Result</h3>
+
+    <p>
+        Predicted Performance:
+        <strong>{{ student.prediction }}</strong>
+    </p>
+
+    <p>
+        Prediction Confidence:
+        <strong>{{ student.prediction_probability|floatformat:2 }}%</strong>
+    </p>
+
+    <hr>
+
+    <h3>Student Information</h3>
+
+    <p>
+        Age:
+        {{ student.age }}
+    </p>
+
+    <p>
+        Attendance:
+        {{ student.attendance }}%
+    </p>
+
+    <p>
+        Study Time:
+        {{ student.study_time }} hours
+    </p>
+
+    <p>
+        Previous Grade:
+        {{ student.previous_grade }}%
+    </p>
+
+    <p>
+        Assignment Score:
+        {{ student.assignment_score }}%
+    </p>
+
+    <p>
+        Participation:
+        {{ student.participation }}%
+    </p>
+
+    <hr>
 
     <a href="{% url 'student_input' %}">
         Make Another Prediction
     </a>
 
 </body>
+
 </html>
